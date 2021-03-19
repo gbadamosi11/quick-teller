@@ -1,0 +1,345 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+.header{
+     height: 100vh;
+}
+.nav{
+     background-color: #fff;
+     height: 20vh;
+}
+.top{
+     background-color: #0275d8 ;
+     height: 5vh;
+}
+.paypoint{
+     color: #fff;
+     display: flex;
+     justify-content: flex-end;
+     padding: 10px 30px;
+     text-transform: capitalize;
+     text-decoration: none;
+     font-size: 12px;
+}
+.main-nav{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 10px 30px;
+}
+.logo{
+     height: 35px;
+     width: 145px;
+     margin: 20px 0;
+}
+.list{
+     list-style: none;
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+     align-items: center;
+     margin-right: 40px;
+}
+.log-in{
+     text-decoration: none;
+     color: #85B24E;
+     border: 1px solid #85B24E;
+     padding: 12px 15px;
+     border-radius: 4px;
+     text-transform: capitalize;
+     font-size: 16px;
+}
+.log-in:hover{
+     border: 1px solid #638b32;
+}
+
+.sign-up{
+     color: #fff;
+     background-color: #85B24E;
+     border-radius: 4px;
+     padding: 12px 15px;
+     text-transform: capitalize;
+     font-size: 16px;
+     text-decoration: none;
+}
+.sign-up:hover{
+     background-color: #638b32;
+}
+.show-log{
+     display: none; 
+     position: fixed; 
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%; 
+     background: rgba(0, 48, 70, 0.93);
+}
+.log-container{
+     position: absolute; 
+     z-index: 2;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%); 
+}
+.close{
+     display: flex;
+     justify-content: flex-end;
+     color: #fff;
+     font-size: 48px;
+     font-weight: bolder;
+     margin-bottom: 50px;
+     position: relative;
+     left: 50px;
+     cursor: pointer;
+}
+.log-heading{
+     color: #fff;
+     font-size: 30px;
+     text-align: center;
+     margin: 40px 0;
+}
+.input-cont{
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+}
+.log-input{
+     padding: 10px 0;
+     border: none;
+     outline: none;
+     border-radius: 4px;
+     color: #55595c;
+}
+.log-input::placeholder{
+     position: absolute;
+     top: 10px;
+     color: #55595c;
+}
+.checkbox-cont{
+     color: #fff;
+     align-items: center;
+     display: flex;
+     gap: 10px;
+     margin-top: -5px;
+     margin-bottom: 20px;
+}
+.checkbox{
+     width: 18px;
+     height: 18px;
+}
+
+.log-btn{
+     padding: 10px 150px;
+     background-color: #85B24E;
+     /* width: 100%; */
+     border: none;
+     color: #fff;
+     border-radius: 4px;
+}
+.log-btn:hover{
+     background-color: #517524;
+}
+.text-center{
+     text-align: center;
+     margin: 40px 0;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.forget{
+     text-decoration: none;
+     color: #01B8DB;
+     font-size: 16px;
+}
+.new{
+     color: #fff;
+     font-size: 16px;
+     font-weight: bolder;
+}
+.sign{
+     text-decoration: none;
+     color: #85B24E;
+}
+.show-sign{
+     display: none; 
+     position: fixed; 
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%; 
+     background: rgba(0, 0, 0, 0.9);
+}
+.main-header{
+     width: 100%;
+     /* background-color: red; */
+     height: 80vh;
+}
+.sides{
+     display: flex;
+     flex-direction: row;
+}
+
+.aside{
+     background-color: #0089c5;
+     width: 10%;
+     height: 80vh;
+}
+
+.link{
+     text-decoration: none;
+}
+.click{
+     background-color: red;
+}
+.link:hover .icon{
+     color: #0274d8b0;
+}
+.icon-cont{
+     padding: 10px 0;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.icon{
+     color: #fff;
+     font-size: 34px;
+     /* padding: 0 30px */
+     margin: auto;
+}
+.icon-text{
+     color: #fff;
+     text-align: center;
+     text-transform: capitalize;
+     font-size: 16px;
+     /* padding: 0 30px; */
+}
+.main{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/city.jpg);
+     width: 90%;
+     height: 75vh;
+     background-position: bottom;
+}
+.main2{
+     background-image: linear-gradient(rgba(255, 255, 255, 0.616), rgba(255, 254, 254, 0.616)), url(../img/type.jpg);
+     width: 50%;
+     height: 75vh;
+     background-position: top, left;
+     background-size: cover;
+}
+
+.search{
+     background-color: #fff;
+     display: flex;
+     flex-direction: row;
+     /* height: 42px; */
+     position: absolute;
+     top: 65%;
+     left: 55%;
+     transform: translate(-50%, -50%);
+     /* gap: 509px; */
+}
+.search-icon{
+     font-size: 30px;
+     color: #ccc;
+     background-color: #fff;
+     padding: 10px;
+     border-right: 1px solid #ccc;
+}
+.input{
+     border: none;
+     outline: none;
+     padding: 10px;
+     width: 500px;
+}
+input::placeholder{
+     color: #ccc;
+     font-size: 16px;
+     position: absolute;
+     left: 10px;
+     top: 20px;
+}
+.footer{
+     height: 5vh;
+     background-color: #fff;
+     position: relative;
+     bottom: 33px;
+     width: 90%;
+     left: 10%;
+}
+.foot-cont{
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     gap: 10px;
+     padding: 5px 0;
+     /* position: relative;
+     bottom: 25px; */
+}
+.foot-list{
+     display: flex;
+     flex-direction: row;
+     gap: 20px;
+     color: #ccc;
+     padding: 0 30px;
+}
+.foot-link{
+     text-decoration: none;
+     color: #0089c5;
+     font-size: 16px;
+}
+.foot-link:hover{
+     border-bottom: 1px solid #0089c5;
+}
+.aside2{
+     width: 20%;
+     background-color: #00638d;
+     height: 75vh;
+}
+
+.aside2-list{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     
+}
+.aside2-link{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     color: #fff;
+     text-decoration: none;
+     padding: 15px 25px;
+     width: 100%;
+     font-size: 14px;
+}
+.x{
+     color: #4ebceb;
+}
+
+.aside2-link:hover{
+     background-color: #045477; 
+}
+.x:hover{
+     background-color: transparent;
+}
+.line{
+     background-color: #fff;
+     height: 2px;
+     width: 80%;
+     margin: 10px auto;
+}
+.aside3{
+     width: 20%;
+     background-color: #00638d;
+     background-image: url(../img/beach.jpg);
+     background-position: top, left;
+     background-size: cover;
+     height: 75vh;
+}
+.great{
+     font-size: 20px;
+}
